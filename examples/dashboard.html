@@ -23,7 +23,7 @@
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Now UI Dashboard by Creative Tim
+    APEX
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -44,20 +44,34 @@
     -->
       <div class="logo">
         <a href="http://www.creative-tim.com" class="simple-text logo-mini">
-          CT
+          <img src="logo.png">
         </a>
         <a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
+          APEX
         </a>
       </div>
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
-          <li class="active ">
+          <li class="active">
             <a href="./dashboard.html">
               <i class="now-ui-icons design_app"></i>
               <p>Dashboard</p>
             </a>
           </li>
+		  
+		 <li class="has-child">
+				<a href='#'>
+          <i class="now-ui-icons education_atom"></i>
+          <p>Drop Down menu</p>
+          </a>
+          
+				<!--<ul>
+					<li><a href='#'>jQuery Library</a></li>
+					<li><a href='#'>AngularJS Framework</a></li>
+				</ul> -->
+			</li>
+
+		  
 		  <li>
             <a href="./class.html">
               <i class="now-ui-icons education_atom"></i>
@@ -82,8 +96,60 @@
               <p>Subject Class</p>
             </a>
           </li>
-          
-           
+		  <li>
+            <a href="./subject.html">
+              <i class="now-ui-icons education_atom"></i>
+              <p>Subjects</p>
+            </a>
+          </li>
+		  <li>
+            <a href="./teacher.html">
+              <i class="now-ui-icons education_atom"></i>
+              <p>Teachers</p>
+            </a>
+          </li>
+		  <li>
+            <a href="./student.html">
+              <i class="now-ui-icons education_atom"></i>
+              <p>Students</p>
+            </a>
+          </li>
+          <!--<li>
+            <a href="./icons.html">
+              <i class="now-ui-icons education_atom"></i>
+              <p>Icons</p>
+            </a>
+          </li>
+          <li>
+            <a href="./map.html">
+              <i class="now-ui-icons location_map-big"></i>
+              <p>Maps</p>
+            </a>
+          </li>
+          <li>
+            <a href="./notifications.html">
+              <i class="now-ui-icons ui-1_bell-53"></i>
+              <p>Notifications</p>
+            </a>
+          </li>
+          <li>
+            <a href="./user.html">
+              <i class="now-ui-icons users_single-02"></i>
+              <p>User Profile</p>
+            </a>
+          </li>
+          <li>
+            <a href="./tables.html">
+              <i class="now-ui-icons design_bullet-list-67"></i>
+              <p>Table List</p>
+            </a>
+          </li>
+          <li>
+            <a href="./typography.html">
+              <i class="now-ui-icons text_caps-small"></i>
+              <p>Typography</p>
+            </a>
+          </li> -->
           
         </ul>
       </div>
@@ -451,6 +517,7 @@
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/navigation.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
   <!--  Google Maps Plugin    -->
@@ -466,6 +533,7 @@
     $(document).ready(function() {
       // Javascript method's body can be found in assets/js/demos.js
       demo.initDashboardPageCharts();
+	  $('.navigation').navigation();
 
     });
   </script>
